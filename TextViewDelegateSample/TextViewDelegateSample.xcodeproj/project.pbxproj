@@ -15,6 +15,7 @@
 		3698CE541D52A5BE0051AA9F /* TextViewDelegateSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3698CE531D52A5BE0051AA9F /* TextViewDelegateSampleTests.swift */; };
 		3698CE5F1D52A5BE0051AA9F /* TextViewDelegateSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3698CE5E1D52A5BE0051AA9F /* TextViewDelegateSampleUITests.swift */; };
 		3698CE6D1D52A5F70051AA9F /* ColorizerTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3698CE6C1D52A5F70051AA9F /* ColorizerTextFieldDelegate.swift */; };
+		3698CE6F1D53D72A0051AA9F /* EmojiTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3698CE6E1D53D72A0051AA9F /* EmojiTextFieldDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3698CE5E1D52A5BE0051AA9F /* TextViewDelegateSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewDelegateSampleUITests.swift; sourceTree = "<group>"; };
 		3698CE601D52A5BE0051AA9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3698CE6C1D52A5F70051AA9F /* ColorizerTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorizerTextFieldDelegate.swift; sourceTree = "<group>"; };
+		3698CE6E1D53D72A0051AA9F /* EmojiTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiTextFieldDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				3698CE471D52A5BE0051AA9F /* LaunchScreen.storyboard */,
 				3698CE4A1D52A5BE0051AA9F /* Info.plist */,
 				3698CE6C1D52A5F70051AA9F /* ColorizerTextFieldDelegate.swift */,
+				3698CE6E1D53D72A0051AA9F /* EmojiTextFieldDelegate.swift */,
 			);
 			path = TextViewDelegateSample;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				3698CE411D52A5BE0051AA9F /* ViewController.swift in Sources */,
 				3698CE6D1D52A5F70051AA9F /* ColorizerTextFieldDelegate.swift in Sources */,
 				3698CE3F1D52A5BE0051AA9F /* AppDelegate.swift in Sources */,
+				3698CE6F1D53D72A0051AA9F /* EmojiTextFieldDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
