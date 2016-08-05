@@ -61,4 +61,27 @@ class ColorizerTextFieldDelegate : NSObject, UITextFieldDelegate {
         textField.resignFirstResponder()
         return true
     }
+    
+    func blendColorArray(colors:[UIColor]) -> UIColor {
+        var colorComponents: [CGFloat] = [CGFloat](count: 4, repeatedValue: 0.0)
+        
+        for color in colors{
+            var red: CGFloat = 0
+            var green: CGFloat = 0
+            var blue: CGFloat = 0
+            var alpha: CGFloat = 0
+            
+            color.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
+            colorComponents[0] += red
+            colorComponents[1] += green
+            colorComponents[2] += blue
+            colorComponents[3] += alpha
+        }
+        
+        for i in 0...colorComponents.count-1{
+            colorComponents[i] /= CGFloat(colors.count)
+        }
+        
+        return UIColor(red: colorComponents[0], green: colorComponents[1], blue: colorComponents[2], alpha: colorComponents[3])
+    }
 }
