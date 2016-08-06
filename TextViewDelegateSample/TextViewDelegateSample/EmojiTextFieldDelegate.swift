@@ -43,6 +43,9 @@ class EmojiTextFieldDelegate: NSObject, UITextFieldDelegate {
         
         if replacedAnEmoji {
             textField.text = newText as String
+            return false
+        } else {
+            return true
         }
         
     }
