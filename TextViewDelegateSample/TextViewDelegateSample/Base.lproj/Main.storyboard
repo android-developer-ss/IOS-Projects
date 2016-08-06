@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TextViewDelegateSample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,54 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LVt-Da-acc">
+                                <rect key="frame" x="0.0" y="64" width="600" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zfr-Uo-CIw">
+                                <rect key="frame" x="0.0" y="126" width="600" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r2Y-6u-XoH">
+                                <rect key="frame" x="0.0" y="189" width="600" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2lG-yr-deN">
+                                <rect key="frame" x="279" y="277" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2lG-yr-deN" firstAttribute="centerX" secondItem="r2Y-6u-XoH" secondAttribute="centerX" id="1Yr-4h-nt5"/>
+                            <constraint firstItem="r2Y-6u-XoH" firstAttribute="leading" secondItem="zfr-Uo-CIw" secondAttribute="leading" id="4o6-3w-Jxn"/>
+                            <constraint firstItem="2lG-yr-deN" firstAttribute="top" secondItem="r2Y-6u-XoH" secondAttribute="bottom" constant="58" id="BPs-5O-cmo"/>
+                            <constraint firstItem="zfr-Uo-CIw" firstAttribute="leading" secondItem="LVt-Da-acc" secondAttribute="leading" id="Bnc-9c-XD9"/>
+                            <constraint firstItem="LVt-Da-acc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="44" id="H4s-oc-I3x"/>
+                            <constraint firstItem="r2Y-6u-XoH" firstAttribute="width" secondItem="zfr-Uo-CIw" secondAttribute="width" id="W0T-BZ-KQp"/>
+                            <constraint firstItem="LVt-Da-acc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="WhR-eE-te9"/>
+                            <constraint firstItem="zfr-Uo-CIw" firstAttribute="width" secondItem="LVt-Da-acc" secondAttribute="width" id="Yot-W1-fup"/>
+                            <constraint firstItem="zfr-Uo-CIw" firstAttribute="top" secondItem="LVt-Da-acc" secondAttribute="bottom" constant="32" id="ckB-sH-qpH"/>
+                            <constraint firstItem="r2Y-6u-XoH" firstAttribute="top" secondItem="zfr-Uo-CIw" secondAttribute="bottom" constant="33" id="fCp-Ct-c8c"/>
+                            <constraint firstItem="LVt-Da-acc" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="hJh-De-lg0"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="characterCountLabel" destination="2lG-yr-deN" id="5QA-fz-5fJ"/>
+                        <outlet property="textField1" destination="LVt-Da-acc" id="Awe-dx-hTM"/>
+                        <outlet property="textField2" destination="zfr-Uo-CIw" id="rre-Xs-maj"/>
+                        <outlet property="textField3" destination="r2Y-6u-XoH" id="2G7-8H-t5z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="325" y="399"/>
         </scene>
     </scenes>
 </document>
