@@ -31,26 +31,15 @@ class ColorizerTextFieldDelegate : NSObject, UITextFieldDelegate {
         
         newText = textField.text!
         newText = newText.stringByReplacingCharactersInRange(range, withString: string)
-        
-//        for(key: color) in self.colors{
-//            if newText.rangeOfString(key, options: NSStringCompareOptions.CaseInsensitiveSearch).location != NSNotFound{
-//                colorsInTheText.append(color)
-//            }
-//            
-//        }
-//        
 
         // For each dictionary entry in translations, pull out a string to search for
-        
         for (key, color) in self.colors {
-            
             if newText.rangeOfString(key, options: NSStringCompareOptions.CaseInsensitiveSearch).location != NSNotFound {
                 colorsInTheText.append(color)
             }
         }
         
         // If we found any colors then blend them and set the text color
-        
         if colorsInTheText.count > 0 {
             textField.textColor = self.blendColorArray(colorsInTheText)
         }
