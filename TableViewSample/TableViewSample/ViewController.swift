@@ -43,6 +43,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let cell:UITableViewCell! = tableView.dequeueReusableCellWithIdentifier("FavouriteThingsCell", forIndexPath: indexPath)
         
         cell.textLabel?.text =  self.myFavouriteThings[indexPath.row]
+        cell.detailTextLabel?.text = "Wow this is prfecto"
         return cell
     }
 
