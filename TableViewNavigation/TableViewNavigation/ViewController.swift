@@ -8,7 +8,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    let favouriteThingsArray: [String] = [
+    "Hello",
+    "Hi",
+    "Hello",
+    "Hi","Hello",
+    "Hi","Hello",
+    "Hi","Hello",
+    "Hi","Hello",
+    "Hi"
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +30,22 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.favouriteThingsArray.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("FavouriteThings", forIndexPath: indexPath)
+        cell.textLabel?.text = self.favouriteThingsArray[indexPath.row]
+        return cell
+    }
 
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let detailViewController = self.storyboard!.instantiateViewControllerWithIdentifier("DetailViewController") as! DetailViewController
+        detailViewController.labelContent = self.favouriteThingsArray[indexPath.row]
+        self.navigationController?.pushViewController(detailViewController, animated: true)
+    }
 
 }
 

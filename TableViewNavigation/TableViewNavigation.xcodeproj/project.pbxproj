@@ -14,6 +14,7 @@
 		36285BC41D5ACE020097BD56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36285BC21D5ACE020097BD56 /* LaunchScreen.storyboard */; };
 		36285BCF1D5ACE020097BD56 /* TableViewNavigationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36285BCE1D5ACE020097BD56 /* TableViewNavigationTests.swift */; };
 		36285BDA1D5ACE020097BD56 /* TableViewNavigationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36285BD91D5ACE020097BD56 /* TableViewNavigationUITests.swift */; };
+		36285C221D5C15EE0097BD56 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36285C211D5C15EE0097BD56 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		36285BD51D5ACE020097BD56 /* TableViewNavigationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableViewNavigationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36285BD91D5ACE020097BD56 /* TableViewNavigationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewNavigationUITests.swift; sourceTree = "<group>"; };
 		36285BDB1D5ACE020097BD56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36285C211D5C15EE0097BD56 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				36285BC01D5ACE020097BD56 /* Assets.xcassets */,
 				36285BC21D5ACE020097BD56 /* LaunchScreen.storyboard */,
 				36285BC51D5ACE020097BD56 /* Info.plist */,
+				36285C211D5C15EE0097BD56 /* DetailViewController.swift */,
 			);
 			path = TableViewNavigation;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36285C221D5C15EE0097BD56 /* DetailViewController.swift in Sources */,
 				36285BBC1D5ACE020097BD56 /* ViewController.swift in Sources */,
 				36285BBA1D5ACE020097BD56 /* AppDelegate.swift in Sources */,
 			);

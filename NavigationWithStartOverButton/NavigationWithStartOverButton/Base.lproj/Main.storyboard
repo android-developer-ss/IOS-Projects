@@ -159,7 +159,7 @@
         <!--View Controller-->
         <scene sceneID="g6M-Z4-GaK">
             <objects>
-                <viewController id="f28-D6-232" sceneMemberID="viewController">
+                <viewController id="f28-D6-232" customClass="ViewController" customModule="NavigationWithStartOverButton" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DN7-zi-Wii"/>
                         <viewControllerLayoutGuide type="bottom" id="Edb-EQ-QH0"/>
