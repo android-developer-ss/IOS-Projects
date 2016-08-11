@@ -13,11 +13,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     let favouriteThingsArray: [String] = [
     "Hello",
     "Hi",
-    "Hello",
-    "Hi","Hello",
-    "Hi","Hello",
-    "Hi","Hello",
-    "Hi","Hello",
+    "Barbie",
+    "Tinker","Celena",
+    "Gomez","Elsa",
+    "Anna","Olaf",
+    "Turbo","Hello",
     "Hi"
     ]
 
