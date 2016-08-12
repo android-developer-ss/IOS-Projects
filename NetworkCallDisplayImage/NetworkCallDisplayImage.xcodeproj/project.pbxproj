@@ -14,6 +14,7 @@
 		366201AF1D5D59A0000D31F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 366201AD1D5D59A0000D31F9 /* LaunchScreen.storyboard */; };
 		366201BA1D5D59A0000D31F9 /* NetworkCallDisplayImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366201B91D5D59A0000D31F9 /* NetworkCallDisplayImageTests.swift */; };
 		366201C51D5D59A0000D31F9 /* NetworkCallDisplayImageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366201C41D5D59A0000D31F9 /* NetworkCallDisplayImageUITests.swift */; };
+		366201D31D5D5F1B000D31F9 /* GCDBlackBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366201D21D5D5F1B000D31F9 /* GCDBlackBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		366201C01D5D59A0000D31F9 /* NetworkCallDisplayImageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkCallDisplayImageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		366201C41D5D59A0000D31F9 /* NetworkCallDisplayImageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCallDisplayImageUITests.swift; sourceTree = "<group>"; };
 		366201C61D5D59A0000D31F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		366201D21D5D5F1B000D31F9 /* GCDBlackBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDBlackBox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				366201AB1D5D59A0000D31F9 /* Assets.xcassets */,
 				366201AD1D5D59A0000D31F9 /* LaunchScreen.storyboard */,
 				366201B01D5D59A0000D31F9 /* Info.plist */,
+				366201D21D5D5F1B000D31F9 /* GCDBlackBox.swift */,
 			);
 			path = NetworkCallDisplayImage;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				366201A71D5D59A0000D31F9 /* ViewController.swift in Sources */,
+				366201D31D5D5F1B000D31F9 /* GCDBlackBox.swift in Sources */,
 				366201A51D5D59A0000D31F9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

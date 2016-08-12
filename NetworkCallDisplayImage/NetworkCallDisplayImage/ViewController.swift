@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidLoad() {
@@ -22,17 +22,20 @@ class ViewController: UIViewController {
             (data , response, error) in
             if (error == nil){
                 let downloadedImage = UIImage(data:data!)
-                self.imageView.image = downloadedImage
+                
+                performUIUpdatesOnMain {
+                    self.imageView.image = downloadedImage
+                }
             }
         }
         task.resume()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 
