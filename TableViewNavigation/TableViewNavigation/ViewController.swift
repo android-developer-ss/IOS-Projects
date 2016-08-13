@@ -18,7 +18,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     "Gomez","Elsa",
     "Anna","Olaf",
     "Turbo","Hello",
-    "Hi"
+    "Hi",
+    "Kung Fu Panda"
     ]
 
     override func viewDidLoad() {
