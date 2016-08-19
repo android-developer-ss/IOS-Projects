@@ -41,6 +41,9 @@
                                     <constraint firstAttribute="height" constant="30" id="V9p-8U-JZE"/>
                                 </constraints>
                                 <state key="normal" title="Get Next Image"/>
+                                <connections>
+                                    <action selector="getNextImageAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="URa-8N-0tY"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -57,6 +60,11 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="getNextImageButton" destination="DRb-MS-E3r" id="ADV-CH-SYq"/>
+                        <outlet property="imageName" destination="56M-7x-So5" id="q0N-1h-NNE"/>
+                        <outlet property="imageView" destination="vLz-48-cVO" id="HGA-0x-jdo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
