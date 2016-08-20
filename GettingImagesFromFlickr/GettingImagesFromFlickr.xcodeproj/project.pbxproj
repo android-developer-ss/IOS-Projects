@@ -15,6 +15,7 @@
 		45CC953F1D656CF700817B98 /* GettingImagesFromFlickrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CC953E1D656CF700817B98 /* GettingImagesFromFlickrTests.swift */; };
 		45CC954A1D656CF700817B98 /* GettingImagesFromFlickrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CC95491D656CF700817B98 /* GettingImagesFromFlickrUITests.swift */; };
 		45CC95581D66AC0300817B98 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CC95571D66AC0300817B98 /* Constants.swift */; };
+		45CC955A1D66ADEF00817B98 /* GCDBlackBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CC95591D66ADEF00817B98 /* GCDBlackBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		45CC95491D656CF700817B98 /* GettingImagesFromFlickrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GettingImagesFromFlickrUITests.swift; sourceTree = "<group>"; };
 		45CC954B1D656CF700817B98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45CC95571D66AC0300817B98 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		45CC95591D66ADEF00817B98 /* GCDBlackBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDBlackBox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				45CC95321D656CF700817B98 /* LaunchScreen.storyboard */,
 				45CC95351D656CF700817B98 /* Info.plist */,
 				45CC95571D66AC0300817B98 /* Constants.swift */,
+				45CC95591D66ADEF00817B98 /* GCDBlackBox.swift */,
 			);
 			path = GettingImagesFromFlickr;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45CC955A1D66ADEF00817B98 /* GCDBlackBox.swift in Sources */,
 				45CC952C1D656CF700817B98 /* ViewController.swift in Sources */,
 				45CC952A1D656CF700817B98 /* AppDelegate.swift in Sources */,
 				45CC95581D66AC0300817B98 /* Constants.swift in Sources */,
