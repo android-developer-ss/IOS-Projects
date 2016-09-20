@@ -16,9 +16,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let imageUrl = NSURL(string: "https://vignette3.wikia.nocookie.net/dfairies/images/0/08/Tinker_Bell_(Disney_Fairies).jpg")!
+        let imageUrl = URL(string: "https://vignette3.wikia.nocookie.net/dfairies/images/0/08/Tinker_Bell_(Disney_Fairies).jpg")!
         
-        let task = NSURLSession.sharedSession().dataTaskWithURL(imageUrl) {
+        let task = URLSession.shared.dataTask(with: imageUrl, completionHandler: {
             (data , response, error) in
             if (error == nil){
                 let downloadedImage = UIImage(data:data!)
@@ -27,7 +27,7 @@ class ViewController: UIViewController {
                     self.imageView.image = downloadedImage
                 }
             }
-        }
+        }) 
         task.resume()
     }
     
