@@ -31,18 +31,23 @@
                                     <constraint firstAttribute="width" constant="127" id="rhN-NJ-Y9G"/>
                                 </constraints>
                             </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hF-sf-6mz"/>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5hF-sf-6mz" secondAttribute="trailing" id="2aH-jr-HSA"/>
                             <constraint firstItem="Hu7-LS-9pT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="6db-zJ-T5f"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Hu7-LS-9pT" secondAttribute="trailing" constant="10" id="8v1-xL-KhL"/>
                             <constraint firstItem="qhO-2S-3KP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="CLW-SJ-BqF"/>
                             <constraint firstAttribute="trailing" secondItem="foH-IY-Jof" secondAttribute="trailing" id="FA9-QU-qNN"/>
+                            <constraint firstItem="5hF-sf-6mz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PLW-vb-kBX"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qhO-2S-3KP" secondAttribute="bottom" id="UQK-ai-nLe"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="foH-IY-Jof" secondAttribute="bottom" id="Wf7-Wi-0SN"/>
                             <constraint firstItem="foH-IY-Jof" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZrW-th-1Cf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5hF-sf-6mz" secondAttribute="bottom" id="ehV-IJ-xPh"/>
                             <constraint firstItem="qhO-2S-3KP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gwq-YA-moi"/>
                             <constraint firstAttribute="trailing" secondItem="qhO-2S-3KP" secondAttribute="trailing" id="hhE-Ut-b8u"/>
+                            <constraint firstItem="5hF-sf-6mz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yXm-j7-cr4"/>
                         </constraints>
                     </view>
                 </viewController>
