@@ -31,8 +31,8 @@
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chucks" translatesAutoresizingMaskIntoConstraints="NO" id="bUr-Yx-SNd"/>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="200" id="V6I-GE-iuN"/>
-                                            <constraint firstAttribute="width" constant="200" id="goc-CH-88b"/>
+                                            <constraint firstAttribute="height" constant="400" id="V6I-GE-iuN"/>
+                                            <constraint firstAttribute="width" constant="350" id="goc-CH-88b"/>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="2Dl-Hq-Cmr">
@@ -96,6 +96,9 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AmP-dR-G08">
                                                 <color key="backgroundColor" red="0.86192462910000001" green="0.063611431349999997" blue="0.06001598599" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="pFU-Mz-VPB"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                 <state key="normal" title="LIKE">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -109,6 +112,7 @@
                                                 </state>
                                             </button>
                                         </subviews>
+                                        <variation key="heightClass=regular-widthClass=compact" axis="vertical"/>
                                     </stackView>
                                 </subviews>
                                 <constraints>
@@ -121,13 +125,13 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="zXz-Z0-kcO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="CE5-Dj-x1w"/>
+                            <constraint firstItem="zXz-Z0-kcO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="CE5-Dj-x1w"/>
                             <constraint firstItem="4lX-XL-AeF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="T7B-PB-TgN"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zXz-Z0-kcO" secondAttribute="bottom" id="TKf-MK-peP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zXz-Z0-kcO" secondAttribute="bottom" constant="10" id="TKf-MK-peP"/>
                             <constraint firstAttribute="trailing" secondItem="4lX-XL-AeF" secondAttribute="trailing" id="bp1-Kk-21D"/>
                             <constraint firstItem="4lX-XL-AeF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="gfc-tS-W4v"/>
-                            <constraint firstItem="zXz-Z0-kcO" firstAttribute="top" secondItem="4lX-XL-AeF" secondAttribute="bottom" id="jxj-2U-Z9l"/>
-                            <constraint firstAttribute="trailing" secondItem="zXz-Z0-kcO" secondAttribute="trailing" id="yoK-5I-j9g"/>
+                            <constraint firstItem="zXz-Z0-kcO" firstAttribute="top" secondItem="4lX-XL-AeF" secondAttribute="bottom" constant="10" id="jxj-2U-Z9l"/>
+                            <constraint firstAttribute="trailing" secondItem="zXz-Z0-kcO" secondAttribute="trailing" constant="10" id="yoK-5I-j9g"/>
                         </constraints>
                     </view>
                 </viewController>
