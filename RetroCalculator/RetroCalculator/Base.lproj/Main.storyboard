@@ -70,7 +70,7 @@
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="5" translatesAutoresizingMaskIntoConstraints="NO" id="FWR-I6-3E7">
                                                 <frame key="frameInset" minX="80" width="70" height="70"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="7" translatesAutoresizingMaskIntoConstraints="NO" id="KEA-eH-LFu">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="6" translatesAutoresizingMaskIntoConstraints="NO" id="KEA-eH-LFu">
                                                 <frame key="frameInset" minX="160" width="70" height="70"/>
                                             </imageView>
                                         </subviews>
@@ -78,17 +78,17 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hAX-Qc-O9X">
                                         <frame key="frameInset" minY="160" width="230" height="70"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="7" translatesAutoresizingMaskIntoConstraints="NO" id="xy8-bT-tf5">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="xy8-bT-tf5">
                                                 <frame key="frameInset" width="70" height="70"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="70" id="8pn-Pb-gGo"/>
                                                     <constraint firstAttribute="height" constant="70" id="rwf-In-wPO"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="7" translatesAutoresizingMaskIntoConstraints="NO" id="aQ2-Bi-0Jp">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="aQ2-Bi-0Jp">
                                                 <frame key="frameInset" minX="80" width="70" height="70"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="7" translatesAutoresizingMaskIntoConstraints="NO" id="02S-ev-3V8">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="02S-ev-3V8">
                                                 <frame key="frameInset" minX="160" width="70" height="70"/>
                                             </imageView>
                                         </subviews>
@@ -96,17 +96,17 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="e2V-bf-qq1">
                                         <frame key="frameInset" minY="240" width="230" height="70"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="7" translatesAutoresizingMaskIntoConstraints="NO" id="Ml8-9S-ZZs">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ml8-9S-ZZs">
                                                 <frame key="frameInset" width="70" height="70"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="70" id="Jgh-tw-963"/>
                                                     <constraint firstAttribute="height" constant="70" id="p7h-4v-3lP"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="7" translatesAutoresizingMaskIntoConstraints="NO" id="mar-fi-WYm">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="add" translatesAutoresizingMaskIntoConstraints="NO" id="mar-fi-WYm">
                                                 <frame key="frameInset" minX="80" width="70" height="70"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="7" translatesAutoresizingMaskIntoConstraints="NO" id="bd4-Cv-Ny0">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="subtract" translatesAutoresizingMaskIntoConstraints="NO" id="bd4-Cv-Ny0">
                                                 <frame key="frameInset" minX="160" width="70" height="70"/>
                                             </imageView>
                                         </subviews>
@@ -114,17 +114,17 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Pvn-HL-m0n">
                                         <frame key="frameInset" minY="320" width="230" height="70"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="7" translatesAutoresizingMaskIntoConstraints="NO" id="83c-sa-lKj">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="divide" translatesAutoresizingMaskIntoConstraints="NO" id="83c-sa-lKj">
                                                 <frame key="frameInset" width="70" height="70"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="70" id="apr-XB-hmD"/>
                                                     <constraint firstAttribute="width" constant="70" id="f3R-hT-Uwj"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="7" translatesAutoresizingMaskIntoConstraints="NO" id="xiP-8C-SSK">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="multiply" translatesAutoresizingMaskIntoConstraints="NO" id="xiP-8C-SSK">
                                                 <frame key="frameInset" minX="80" width="70" height="70"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="7" translatesAutoresizingMaskIntoConstraints="NO" id="ZP9-Yr-zEP">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="equal" translatesAutoresizingMaskIntoConstraints="NO" id="ZP9-Yr-zEP">
                                                 <frame key="frameInset" minX="160" width="70" height="70"/>
                                             </imageView>
                                         </subviews>
@@ -154,14 +154,24 @@
         </scene>
     </scenes>
     <resources>
+        <image name="0" width="111" height="114"/>
+        <image name="1" width="111" height="114"/>
+        <image name="2" width="111" height="114"/>
+        <image name="3" width="111" height="114"/>
         <image name="4" width="111" height="114"/>
         <image name="5" width="111" height="114"/>
+        <image name="6" width="111" height="114"/>
         <image name="7" width="111" height="114"/>
         <image name="8" width="111" height="114"/>
         <image name="9" width="111" height="114"/>
+        <image name="add" width="111" height="114"/>
         <image name="backpanel" width="620" height="938"/>
         <image name="counter" width="516" height="133"/>
+        <image name="divide" width="111" height="114"/>
+        <image name="equal" width="111" height="114"/>
         <image name="ground" width="888" height="72"/>
+        <image name="multiply" width="111" height="114"/>
         <image name="space-bg" width="988" height="946"/>
+        <image name="subtract" width="111" height="114"/>
     </resources>
 </document>
