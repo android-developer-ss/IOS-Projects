@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChangingScreensWithSegues/PlaySongVC.swift"
+            timestampString = "498099444.476062"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "PlaySongVC"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ChangingScreensWithSegues.PlaySongVC.(_selectedSong in _4CA3592E453D1B7EE224A769EE530E97).setter : Swift.ImplicitlyUnwrappedOptional&lt;Swift.String&gt;"
+                  moduleName = "ChangingScreensWithSegues"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/snehal/IOS-Projects/ChangingScreensWithSegues/ChangingScreensWithSegues/PlaySongVC.swift"
+                  timestampString = "498099466.153712"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "162">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ChangingScreensWithSegues.PlaySongVC.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; ChangingScreensWithSegues.PlaySongVC"
+                  moduleName = "ChangingScreensWithSegues"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/snehal/IOS-Projects/ChangingScreensWithSegues/ChangingScreensWithSegues/PlaySongVC.swift"
+                  timestampString = "498099466.155394"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "194">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ChangingScreensWithSegues.PlaySongVC.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;ChangingScreensWithSegues.PlaySongVC&gt;"
+                  moduleName = "ChangingScreensWithSegues"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/snehal/IOS-Projects/ChangingScreensWithSegues/ChangingScreensWithSegues/PlaySongVC.swift"
+                  timestampString = "498099466.156939"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "120">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
