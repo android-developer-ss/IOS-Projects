@@ -34,13 +34,14 @@ class ViewController: UIViewController {
     }
     
     @IBAction func numberPressed(sender: UIButton){
-        
+        playSound()
     }
     
     func playSound(){
         if(buttonSound.isPlaying){
             buttonSound.stop()
         }
+        buttonSound.play()
     }
 
 
