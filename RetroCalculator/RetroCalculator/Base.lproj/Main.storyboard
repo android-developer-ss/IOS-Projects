@@ -5,6 +5,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Minnie.TTF">
+            <string>Minnie</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -15,7 +20,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="space-bg" translatesAutoresizingMaskIntoConstraints="NO" id="pYV-1q-CmT"/>
@@ -27,6 +32,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="counter" translatesAutoresizingMaskIntoConstraints="NO" id="jCV-JT-f9d">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="62" id="14F-5W-JoX"/>
+                                    <constraint firstAttribute="width" constant="230" id="cWX-M3-GJ1"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backpanel" translatesAutoresizingMaskIntoConstraints="NO" id="Rb7-Ac-ExF">
@@ -194,17 +200,25 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1234" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mcw-sK-Ewp">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Minnie" family="Minnie" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="pYV-1q-CmT" firstAttribute="top" secondItem="jCV-JT-f9d" secondAttribute="bottom" constant="-82" id="3O1-6Y-avX"/>
+                            <constraint firstItem="Mcw-sK-Ewp" firstAttribute="trailing" secondItem="jCV-JT-f9d" secondAttribute="trailing" constant="-10" id="4Ug-B2-FqM"/>
                             <constraint firstItem="jCV-JT-f9d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Ii-RS-pId"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ayF-zZ-0qR" secondAttribute="bottom" id="D7u-x1-jRk"/>
                             <constraint firstItem="pYV-1q-CmT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="DUz-92-MAI"/>
                             <constraint firstAttribute="trailing" secondItem="ayF-zZ-0qR" secondAttribute="trailing" id="FC8-Cx-1sF"/>
+                            <constraint firstItem="Mcw-sK-Ewp" firstAttribute="centerY" secondItem="jCV-JT-f9d" secondAttribute="centerY" id="FWU-8y-d4M"/>
                             <constraint firstItem="Rb7-Ac-ExF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ix7-SS-8gz"/>
                             <constraint firstItem="ayF-zZ-0qR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="JNb-xZ-wzu"/>
                             <constraint firstItem="83c-kT-7vo" firstAttribute="centerY" secondItem="Rb7-Ac-ExF" secondAttribute="centerY" id="KPY-xc-cbP"/>
+                            <constraint firstItem="Mcw-sK-Ewp" firstAttribute="leading" secondItem="jCV-JT-f9d" secondAttribute="leading" constant="10" id="T7K-vV-wBK"/>
                             <constraint firstItem="83c-kT-7vo" firstAttribute="centerX" secondItem="Rb7-Ac-ExF" secondAttribute="centerX" id="UpR-t8-EZJ"/>
                             <constraint firstItem="pYV-1q-CmT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Wy3-Qk-X1R"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pYV-1q-CmT" secondAttribute="bottom" id="ccZ-9x-Ldx"/>
@@ -215,7 +229,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-98.550724637681171" y="123.09782608695653"/>
+            <point key="canvasLocation" x="-99.375" y="122.53521126760563"/>
         </scene>
     </scenes>
     <resources>
