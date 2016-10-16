@@ -10,6 +10,10 @@ import UIKit
 
 class PartyTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var videoSongLabel: UILabel!
+    
+    @IBOutlet weak var videoPreviewImage: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -19,6 +23,10 @@ class PartyTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func updateUI(){
+        
     }
 
 }
