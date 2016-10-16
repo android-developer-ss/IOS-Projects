@@ -12,7 +12,25 @@ import AVFoundation
 class ViewController: UIViewController {
     
     var buttonSound:AVAudioPlayer!
-
+    
+    @IBOutlet weak var outputLabel: UITextField!
+    
+    enum Operation : String{
+        case Divide = "/"
+        case Multiply = "*"
+        case Add = "+"
+        case Subtract = "-"
+        case Equal = "="
+        case Empty = ""
+    }
+    
+    // Variables to perform operations
+    var runningNumber = ""
+    var leftValStr = ""
+    var rightValStr = ""
+    var result = ""
+    var currentOperation = Operation.Empty
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,7 +45,7 @@ class ViewController: UIViewController {
         }
         
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -35,6 +53,8 @@ class ViewController: UIViewController {
     
     @IBAction func numberPressed(sender: UIButton){
         playSound()
+        runningNumber += "\(sender.tag)"
+        outputLabel.text = runningNumber
     }
     
     func playSound(){
@@ -43,7 +63,59 @@ class ViewController: UIViewController {
         }
         buttonSound.play()
     }
-
-
+    
+    
+    @IBAction func addOperation(_ sender: AnyObject) {
+        processOperation(operation: Operation.Add)
+    }
+    
+    @IBAction func subtractOperation(_ sender: AnyObject) {
+        processOperation(operation: Operation.Subtract)
+    }
+    
+    @IBAction func divideOperation(_ sender: AnyObject) {
+        processOperation(operation: Operation.Divide)
+    }
+    
+    @IBAction func multiplyOperation(_ sender: AnyObject) {
+        processOperation(operation: Operation.Multiply)
+    }
+    
+    @IBAction func equalsOperation(_ sender: AnyObject) {
+        processOperation(operation: Operation.Equal)
+    }
+    
+    // When Add, Substract, multiply, Divide operations clicked process the data.
+    func processOperation(operation: Operation){
+        playSound()
+        if(currentOperation != Operation.Empty){
+            if(runningNumber != ""){
+                rightValStr = runningNumber
+                runningNumber = ""
+                if(currentOperation == Operation.Add){
+                    result = "\(Double(leftValStr)! + Double(rightValStr)!)"
+                } else if(currentOperation == Operation.Subtract){
+                    result = "\(Double(leftValStr)! - Double(rightValStr)!)"
+                } else if(currentOperation == Operation.Multiply){
+                    result = "\(Double(leftValStr)! * Double(rightValStr)!)"
+                } else if (currentOperation == Operation.Divide){
+                    result = "\(Double(leftValStr)! / Double(rightValStr)!)"
+                }
+//                else if(currentOperation == Operation.Equal){
+//                    outputLabel.text = result
+//                }
+                
+                leftValStr = result
+                outputLabel.text = result
+                
+            }
+            currentOperation = operation
+        } else {
+            leftValStr = runningNumber
+            runningNumber = ""
+            currentOperation = operation
+        }
+    }
+    
 }
 
