@@ -63,7 +63,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="82" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="l1b-rC-4nP">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="82" id="3X3-En-g7F" customClass="PartyTableViewCell" customModule="PartyRockApp" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PartyCell" rowHeight="82" id="3X3-En-g7F" customClass="PartyTableViewCell" customModule="PartyRockApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="82"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3X3-En-g7F" id="WPc-zr-vcM">
@@ -115,6 +115,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="tableView" destination="l1b-rC-4nP" id="buU-78-Q9G"/>
                         <segue destination="Oaw-0u-73k" kind="showDetail" identifier=" " id="7gX-6g-0JE"/>
                     </connections>
                 </viewController>
