@@ -9,7 +9,7 @@
 import UIKit
 
 class PartyTableViewCell: UITableViewCell {
-
+    
     @IBOutlet weak var videoSongLabel: UILabel!
     
     @IBOutlet weak var videoPreviewImage: UIImageView!
@@ -18,15 +18,29 @@ class PartyTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
     
-    func updateUI(){
+    func updateUI(partyRock : PartyRock){
+        videoSongLabel.text = partyRock.videoTitle
         
+        let url = URL(string: partyRock.imageURL)!
+        
+        DispatchQueue.global().async {
+            do{
+                let data = try Data(contentsOf: url)
+                DispatchQueue.global().sync {
+                    self.videoPreviewImage.image = UIImage(data:data)
+                }
+            }catch {
+                //handle error
+            }
+            
+        }
     }
-
+    
 }
