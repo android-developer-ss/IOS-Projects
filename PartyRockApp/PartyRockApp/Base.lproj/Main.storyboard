@@ -116,7 +116,7 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="l1b-rC-4nP" id="buU-78-Q9G"/>
-                        <segue destination="Oaw-0u-73k" kind="showDetail" identifier=" " id="7gX-6g-0JE"/>
+                        <segue destination="Oaw-0u-73k" kind="showDetail" identifier="SegueToVideoVC" id="voZ-YV-f94"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -141,18 +141,33 @@
                                     <constraint firstAttribute="height" constant="242" id="dgE-5w-9d5"/>
                                 </constraints>
                             </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jm9-Ld-jeD">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="m8E-Bs-Lex"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.8826855012" green="0.85849217060000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="Jm9-Ld-jeD" firstAttribute="leading" secondItem="Qwe-iH-3gY" secondAttribute="leading" id="6g6-Uw-3L5"/>
+                            <constraint firstItem="Jm9-Ld-jeD" firstAttribute="top" secondItem="yYz-6s-dpH" secondAttribute="bottom" constant="81" id="DRN-gY-MHd"/>
                             <constraint firstItem="yYz-6s-dpH" firstAttribute="leading" secondItem="Qwe-iH-3gY" secondAttribute="leading" id="QKy-Gh-0HW"/>
                             <constraint firstItem="yYz-6s-dpH" firstAttribute="top" secondItem="Qwe-iH-3gY" secondAttribute="top" id="bWk-ur-T47"/>
                             <constraint firstAttribute="trailing" secondItem="yYz-6s-dpH" secondAttribute="trailing" id="nbC-2P-ssC"/>
+                            <constraint firstAttribute="trailing" secondItem="Jm9-Ld-jeD" secondAttribute="trailing" id="z3A-ih-b3H"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="songTitle" destination="Jm9-Ld-jeD" id="jbL-SD-nFG"/>
+                        <outlet property="webView" destination="yYz-6s-dpH" id="n6l-pc-l5i"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xty-9d-Irk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="704.79999999999995" y="73.313343328335833"/>
+            <point key="canvasLocation" x="831" y="38"/>
         </scene>
     </scenes>
     <resources>

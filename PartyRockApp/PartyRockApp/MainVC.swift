@@ -33,11 +33,12 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         partyRocks.append(p3)
         partyRocks.append(p1)
         partyRocks.append(p1)
+        
     }
     
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        <#code#>
-//    }
+    //    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    //        <#code#>
+    //    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return partyRocks.count
@@ -50,6 +51,20 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             return cell
         } else{
             return UITableViewCell()
+        }
+    }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let partyRock = partyRocks[indexPath.row]
+        performSegue(withIdentifier: "SegueToVideoVC", sender: partyRock)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destinationSegue = segue.destination as? VideoVC {
+            if let partyRock = sender as? PartyRock{
+                destinationSegue.partyRock = partyRock
+            }
         }
     }
 }
