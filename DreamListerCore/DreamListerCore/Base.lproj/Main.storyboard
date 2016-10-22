@@ -29,14 +29,14 @@
                                     <segment title="Title"/>
                                 </segments>
                             </segmentedControl>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="151" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7qL-v1-bMO">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="151" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7qL-v1-bMO">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="150" id="vr6-Rt-Y4h" customClass="ItemCellTableViewCell" customModule="DreamListerCore" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" rowHeight="150" id="vr6-Rt-Y4h" customClass="ItemCellTableViewCell" customModule="DreamListerCore" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="333" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vr6-Rt-Y4h" id="kwA-Rn-Kdi">
-                                            <frame key="frameInset" width="333" height="149"/>
+                                            <frame key="frameInset" width="333" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H0C-gb-Qdy">
@@ -101,6 +101,9 @@
                                                 <constraint firstAttribute="trailingMargin" secondItem="H0C-gb-Qdy" secondAttribute="trailing" constant="1" id="zm4-zO-Ed4"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <outlet property="details" destination="L0o-JW-CWt" id="6iI-dg-CGB"/>
                                             <outlet property="price" destination="M8y-ff-DfR" id="4Wx-Xk-RA8"/>
@@ -144,7 +147,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sGL-6R-8xY" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="BfW-n7-ctn">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BfW-n7-ctn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
