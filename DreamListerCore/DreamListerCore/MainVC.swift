@@ -125,6 +125,11 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         item2.title = "Dell"
         item2.price = 500
         item2.details = "I love Mac.. Its so fast and accurate and the trackpad is awesome compared to Windows.."
+        
+        let item3 = Item(context: context)
+        item3.title = "Acer"
+        item3.price = 700
+        item3.details = "I love Acer.. Its so fast and accurate and the trackpad is awesome compared to Windows.."
 
     }
 }
