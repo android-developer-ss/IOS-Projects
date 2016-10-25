@@ -8,17 +8,11 @@
 
 import UIKit
 
-class ItemDetailsVC: UITableViewCell {
+class ItemDetailsVC: UIViewController {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    override func viewDidLoad() {
+        if let topItem = self.navigationController?.navigationBar.topItem{
+            topItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
+        }
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
 }
