@@ -109,6 +109,7 @@
                                             <outlet property="price" destination="M8y-ff-DfR" id="4Wx-Xk-RA8"/>
                                             <outlet property="thumb" destination="nV5-gW-0pA" id="9Lh-zv-xbK"/>
                                             <outlet property="title" destination="yfU-ft-dZr" id="c6u-fw-5mZ"/>
+                                            <segue destination="PuO-28-7SN" kind="show" id="6o1-TY-4Xg"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -139,7 +140,6 @@
                     <connections>
                         <outlet property="segment" destination="fhm-rO-hQz" id="3mE-bP-IXA"/>
                         <outlet property="tableView" destination="7qL-v1-bMO" id="seY-oF-tAw"/>
-                        <segue destination="PuO-28-7SN" kind="show" identifier="ItemDetailsVC" id="jGK-Oq-oWS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -280,6 +280,6 @@
         <image name="tesla" width="800" height="489"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="jGK-Oq-oWS"/>
+        <segue reference="a6W-db-5aB"/>
     </inferredMetricsTieBreakers>
 </document>
