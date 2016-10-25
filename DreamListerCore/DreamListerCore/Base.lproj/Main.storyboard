@@ -131,16 +131,82 @@
                     <navigationItem key="navigationItem" title="Dream Lister" id="TvX-f7-9Zh">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="F7e-9S-rrQ">
                             <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="PuO-28-7SN" kind="show" identifier="ItemDetailsVCNew" id="a6W-db-5aB"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="segment" destination="fhm-rO-hQz" id="3mE-bP-IXA"/>
                         <outlet property="tableView" destination="7qL-v1-bMO" id="seY-oF-tAw"/>
+                        <segue destination="PuO-28-7SN" kind="show" identifier="ItemDetailsVC" id="jGK-Oq-oWS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1029.5999999999999" y="792.95352323838085"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="YGv-8L-dHT">
+            <objects>
+                <viewController id="PuO-28-7SN" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iJf-e7-ASC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jvb-gV-Hha"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Kke-aW-WIb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imagePick" translatesAutoresizingMaskIntoConstraints="NO" id="0gB-d7-OJH">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="HG7-uN-xb3"/>
+                                    <constraint firstAttribute="width" constant="100" id="QcR-dn-LLe"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p4g-9o-dqI">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Ufx-Aa-m9W"/>
+                                    <constraint firstAttribute="height" constant="100" id="oUj-qh-rP1"/>
+                                </constraints>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7QJ-YO-xdu">
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="BtX-se-Yuq"/>
+                                    <constraint firstAttribute="width" constant="218" id="LH5-qW-E3s"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LdD-46-Ciy">
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="6bE-Vu-Oe4"/>
+                                    <constraint firstAttribute="width" constant="218" id="gD5-7l-IvC"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LdD-46-Ciy" firstAttribute="leading" secondItem="p4g-9o-dqI" secondAttribute="trailing" constant="8" id="1rP-BY-B4K"/>
+                            <constraint firstItem="p4g-9o-dqI" firstAttribute="centerX" secondItem="0gB-d7-OJH" secondAttribute="centerX" id="2bL-q2-f2P"/>
+                            <constraint firstItem="LdD-46-Ciy" firstAttribute="top" secondItem="7QJ-YO-xdu" secondAttribute="bottom" constant="8" id="6Gb-Iy-dal"/>
+                            <constraint firstItem="0gB-d7-OJH" firstAttribute="top" secondItem="iJf-e7-ASC" secondAttribute="bottom" constant="8" id="9rb-di-IpF"/>
+                            <constraint firstItem="7QJ-YO-xdu" firstAttribute="leading" secondItem="p4g-9o-dqI" secondAttribute="trailing" constant="8" id="KeF-cb-czc"/>
+                            <constraint firstItem="7QJ-YO-xdu" firstAttribute="top" secondItem="iJf-e7-ASC" secondAttribute="bottom" constant="18" id="cab-bw-RA3"/>
+                            <constraint firstItem="p4g-9o-dqI" firstAttribute="centerY" secondItem="0gB-d7-OJH" secondAttribute="centerY" id="fEa-i8-hmW"/>
+                            <constraint firstItem="0gB-d7-OJH" firstAttribute="leading" secondItem="Kke-aW-WIb" secondAttribute="leadingMargin" constant="8" id="v6t-uD-E0z"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Evq-lp-hER" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1720.8" y="792.95352323838085"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dQg-ie-gdr">
@@ -165,6 +231,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="imagePick" width="300" height="300"/>
         <image name="tesla" width="800" height="489"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="jGK-Oq-oWS"/>
+    </inferredMetricsTieBreakers>
 </document>
