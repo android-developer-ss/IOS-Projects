@@ -20,7 +20,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        generateTestData()
+        //generateTestData()
         attemptFetch()
         
     }
@@ -131,6 +131,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         item3.price = 700
         item3.details = "I love Acer.. Its so fast and accurate and the trackpad is awesome compared to Windows.."
 
+        ad.saveContext()
     }
 }
 
