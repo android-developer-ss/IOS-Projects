@@ -12,7 +12,7 @@ import CoreData
 class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
     @IBOutlet weak var storePicker: UIPickerView!
-    @IBOutlet var titleField: UIView!
+    @IBOutlet weak var titleField: UITextField!
     @IBOutlet weak var priceField: UITextField!
     @IBOutlet weak var detailsView: UITextField!
     
@@ -65,6 +65,19 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         }
     }
     @IBAction func savePressed(_ sender: AnyObject) {
+        let item = Item(context : context)
+        if let title = titleField.text {
+            item.title = title
+        }
+        if let price = priceField.text {
+            item.price = (price as NSString).doubleValue
+        }
+        if let details = detailsView.text{
+            item.details = details
+        }
         
+        item.toStore = stores[storePicker.selectedRow(inComponent: 0)]
+        ad.saveContext()
+        _ = navigationController?.popViewController(animated: true)
     }
 }

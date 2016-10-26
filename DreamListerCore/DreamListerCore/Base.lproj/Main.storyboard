@@ -255,7 +255,7 @@
                         <outlet property="detailsView" destination="U1Q-gk-W1I" id="UtR-RJ-RgT"/>
                         <outlet property="priceField" destination="LdD-46-Ciy" id="Nno-fR-JYq"/>
                         <outlet property="storePicker" destination="Xz0-LE-hya" id="nZO-uT-Pmc"/>
-                        <outlet property="titleField" destination="Kke-aW-WIb" id="Zj0-DV-q7o"/>
+                        <outlet property="titleField" destination="7QJ-YO-xdu" id="8ul-Gc-eBg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Evq-lp-hER" userLabel="First Responder" sceneMemberID="firstResponder"/>
