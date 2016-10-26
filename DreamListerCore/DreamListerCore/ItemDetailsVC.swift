@@ -7,23 +7,34 @@
 //
 
 import UIKit
+import CoreData
 
 class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
-
+    
     @IBOutlet weak var storePicker: UIPickerView!
     @IBOutlet var titleField: UIView!
     @IBOutlet weak var priceField: UITextField!
     @IBOutlet weak var detailsView: UITextField!
     
     var stores = [Store]()
+    var storeNames:[String] = ["Best Buy", "Macys", "JCPenney", "Walmart", "Kohls", "Sears", "Amazon", "KMart"]
     
     override func viewDidLoad() {
         if let topItem = self.navigationController?.navigationBar.topItem{
             topItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
-            
-            storePicker.dataSource = self
-            storePicker.delegate = self
         }
+        storePicker.dataSource = self
+        storePicker.delegate = self
+        //createStores()
+        getStores()
+    }
+    
+    func createStores(){
+        for storeName in storeNames{
+            let store = Store(context: context)
+            store.name = storeName
+        }
+        ad.saveContext()
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
@@ -32,7 +43,7 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-            return stores.count
+        return stores.count
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -40,6 +51,17 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        <#code#>
+        
+    }
+    
+    
+    func getStores(){
+        let fetchRequest : NSFetchRequest<Store> = Store.fetchRequest()
+        do {
+            self.stores = try context.fetch(fetchRequest)
+            self.storePicker .reloadAllComponents()
+        } catch {
+            //handle the error
+        }
     }
 }
