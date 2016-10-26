@@ -25,7 +25,7 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         }
         storePicker.dataSource = self
         storePicker.delegate = self
-        //createStores()
+        createStores()
         getStores()
     }
     
