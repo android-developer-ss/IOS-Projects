@@ -18,6 +18,7 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
     
     var stores = [Store]()
     var storeNames:[String] = ["Best Buy", "Macys", "JCPenney", "Walmart", "Kohls", "Sears", "Amazon", "KMart"]
+    var itemToEdit: Item?
     
     override func viewDidLoad() {
         if let topItem = self.navigationController?.navigationBar.topItem{
@@ -25,8 +26,11 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         }
         storePicker.dataSource = self
         storePicker.delegate = self
-        createStores()
+        //createStores()
         getStores()
+        if itemToEdit != nil {
+            loadItemData()
+        }
     }
     
     func createStores(){
@@ -79,5 +83,9 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
         item.toStore = stores[storePicker.selectedRow(inComponent: 0)]
         ad.saveContext()
         _ = navigationController?.popViewController(animated: true)
+    }
+    
+    func loadItemData(){
+        
     }
 }
