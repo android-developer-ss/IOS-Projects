@@ -218,6 +218,9 @@
                                     <constraint firstAttribute="height" constant="30" id="5or-cI-azg"/>
                                 </constraints>
                                 <state key="normal" title="Save Item"/>
+                                <connections>
+                                    <action selector="savePressed:" destination="PuO-28-7SN" eventType="touchUpInside" id="VWV-r4-E0e"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
