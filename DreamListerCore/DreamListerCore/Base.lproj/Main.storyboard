@@ -248,6 +248,12 @@
                             <color key="tintColor" red="0.86192462910000001" green="0.063611431349999997" blue="0.06001598599" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="detailsView" destination="U1Q-gk-W1I" id="UtR-RJ-RgT"/>
+                        <outlet property="priceField" destination="LdD-46-Ciy" id="Nno-fR-JYq"/>
+                        <outlet property="storePicker" destination="Xz0-LE-hya" id="nZO-uT-Pmc"/>
+                        <outlet property="titleField" destination="Kke-aW-WIb" id="Zj0-DV-q7o"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Evq-lp-hER" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -258,7 +264,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sGL-6R-8xY" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="BfW-n7-ctn">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BfW-n7-ctn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
