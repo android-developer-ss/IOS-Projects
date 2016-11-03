@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="sGL-6R-8xY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="sGL-6R-8xY">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,6 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fhm-rO-hQz">
+                                <rect key="frame" x="36" y="84" width="303" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="An6-PX-DSa"/>
                                 </constraints>
@@ -30,24 +34,28 @@
                                 </segments>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="151" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7qL-v1-bMO">
+                                <rect key="frame" x="21" y="132" width="333" height="535"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" rowHeight="150" id="vr6-Rt-Y4h" customClass="ItemCellTableViewCell" customModule="DreamListerCore" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="333" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vr6-Rt-Y4h" id="kwA-Rn-Kdi">
-                                            <frame key="frameInset" width="333" height="150"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="333" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H0C-gb-Qdy">
+                                                    <rect key="frame" x="9" y="9" width="315" height="132"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tesla" translatesAutoresizingMaskIntoConstraints="NO" id="nV5-gW-0pA">
+                                                            <rect key="frame" x="8" y="16" width="100" height="100"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="100" id="CiE-kg-GRj"/>
                                                                 <constraint firstAttribute="height" constant="100" id="sm5-hn-CyR"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tesla Model S" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfU-ft-dZr">
+                                                            <rect key="frame" x="116" y="8" width="191" height="21"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="21" id="Mzv-Nx-E6N"/>
                                                             </constraints>
@@ -56,6 +64,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$80,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8y-ff-DfR">
+                                                            <rect key="frame" x="116" y="37" width="191" height="21"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="21" id="OmC-VP-blQ"/>
                                                             </constraints>
@@ -64,6 +73,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0o-JW-CWt">
+                                                            <rect key="frame" x="116" y="66" width="191" height="50"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="50" id="GK6-OD-B1e"/>
                                                             </constraints>
@@ -109,7 +119,7 @@
                                             <outlet property="price" destination="M8y-ff-DfR" id="4Wx-Xk-RA8"/>
                                             <outlet property="thumb" destination="nV5-gW-0pA" id="9Lh-zv-xbK"/>
                                             <outlet property="title" destination="yfU-ft-dZr" id="c6u-fw-5mZ"/>
-                                            <segue destination="PuO-28-7SN" kind="show" id="6o1-TY-4Xg"/>
+                                            <segue destination="PuO-28-7SN" kind="show" identifier="ItemDetailsVC" id="6o1-TY-4Xg"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -159,18 +169,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imagePick" translatesAutoresizingMaskIntoConstraints="NO" id="0gB-d7-OJH">
+                                <rect key="frame" x="24" y="72" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="HG7-uN-xb3"/>
                                     <constraint firstAttribute="width" constant="100" id="QcR-dn-LLe"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p4g-9o-dqI">
+                                <rect key="frame" x="24" y="72" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="Ufx-Aa-m9W"/>
                                     <constraint firstAttribute="height" constant="100" id="oUj-qh-rP1"/>
                                 </constraints>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7QJ-YO-xdu">
+                                <rect key="frame" x="132" y="82" width="218" height="40"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="BtX-se-Yuq"/>
@@ -181,6 +194,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LdD-46-Ciy">
+                                <rect key="frame" x="132" y="130" width="218" height="40"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="6bE-Vu-Oe4"/>
@@ -191,6 +205,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Details" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U1Q-gk-W1I">
+                                <rect key="frame" x="8" y="194" width="359" height="60"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="sT7-wW-aHX"/>
@@ -200,6 +215,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a store" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JOa-o2-lms">
+                                <rect key="frame" x="135" y="304" width="105" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="YCr-Qj-7H6"/>
                                 </constraints>
@@ -208,11 +224,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xz0-LE-hya">
+                                <rect key="frame" x="25" y="333" width="325" height="220"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="220" id="ZJd-2H-dDa"/>
                                 </constraints>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTE-gY-SPi">
+                                <rect key="frame" x="24" y="617" width="327" height="30"/>
                                 <color key="backgroundColor" red="0.8826855012" green="0.85849217060000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="5or-cI-azg"/>
@@ -290,6 +308,6 @@
         <image name="tesla" width="800" height="489"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="a6W-db-5aB"/>
+        <segue reference="6o1-TY-4Xg"/>
     </inferredMetricsTieBreakers>
 </document>
