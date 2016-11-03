@@ -45,8 +45,19 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let objs = controller.fetchedObjects, objs.count > 0 {
             let item = objs[indexPath.row]
-            performSegue(withIdentifier: "ItemDetailsVC", sender: item)
+            
+            // ****************** METHOD 2 to perform segues ******************
+            let inputDetail = storyboard?.instantiateViewController(withIdentifier: "ItemDetailsVC") as! ItemDetailsVC
+            inputDetail.itemToEdit = item;
+            navigationController?.pushViewController(inputDetail, animated: true)
+            
+            //performSegue(withIdentifier: "ItemDetailsVC", sender: item)
         }
+    }
+    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        
+        return false
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ItemDetailsVC" {

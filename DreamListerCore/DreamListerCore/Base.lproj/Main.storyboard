@@ -119,7 +119,6 @@
                                             <outlet property="price" destination="M8y-ff-DfR" id="4Wx-Xk-RA8"/>
                                             <outlet property="thumb" destination="nV5-gW-0pA" id="9Lh-zv-xbK"/>
                                             <outlet property="title" destination="yfU-ft-dZr" id="c6u-fw-5mZ"/>
-                                            <segue destination="PuO-28-7SN" kind="show" identifier="ItemDetailsVC" id="Aip-ub-vkH"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -159,7 +158,7 @@
         <!--Add/Edit-->
         <scene sceneID="YGv-8L-dHT">
             <objects>
-                <viewController id="PuO-28-7SN" customClass="ItemDetailsVC" customModule="DreamListerCore" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ItemDetailsVC" id="PuO-28-7SN" customClass="ItemDetailsVC" customModule="DreamListerCore" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iJf-e7-ASC"/>
                         <viewControllerLayoutGuide type="bottom" id="Jvb-gV-Hha"/>
@@ -307,7 +306,4 @@
         <image name="imagePick" width="300" height="300"/>
         <image name="tesla" width="800" height="489"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="Aip-ub-vkH"/>
-    </inferredMetricsTieBreakers>
 </document>

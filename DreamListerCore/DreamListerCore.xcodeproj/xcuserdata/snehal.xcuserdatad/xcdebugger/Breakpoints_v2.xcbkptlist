@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DreamListerCore/MainVC.swift"
-            timestampString = "499898351.372861"
+            timestampString = "499905754.952073"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
             landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
