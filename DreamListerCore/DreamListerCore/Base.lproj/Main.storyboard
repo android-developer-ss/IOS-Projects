@@ -33,11 +33,11 @@
                                     <segment title="Title"/>
                                 </segments>
                             </segmentedControl>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="151" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7qL-v1-bMO">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="151" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7qL-v1-bMO">
                                 <rect key="frame" x="21" y="132" width="333" height="535"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" rowHeight="150" id="vr6-Rt-Y4h" customClass="ItemCellTableViewCell" customModule="DreamListerCore" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="ItemCell" rowHeight="150" id="vr6-Rt-Y4h" customClass="ItemCellTableViewCell" customModule="DreamListerCore" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="333" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vr6-Rt-Y4h" id="kwA-Rn-Kdi">
@@ -119,7 +119,7 @@
                                             <outlet property="price" destination="M8y-ff-DfR" id="4Wx-Xk-RA8"/>
                                             <outlet property="thumb" destination="nV5-gW-0pA" id="9Lh-zv-xbK"/>
                                             <outlet property="title" destination="yfU-ft-dZr" id="c6u-fw-5mZ"/>
-                                            <segue destination="PuO-28-7SN" kind="show" identifier="ItemDetailsVC" id="6o1-TY-4Xg"/>
+                                            <segue destination="PuO-28-7SN" kind="show" identifier="ItemDetailsVC" id="Aip-ub-vkH"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -308,6 +308,6 @@
         <image name="tesla" width="800" height="489"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6o1-TY-4Xg"/>
+        <segue reference="Aip-ub-vkH"/>
     </inferredMetricsTieBreakers>
 </document>
