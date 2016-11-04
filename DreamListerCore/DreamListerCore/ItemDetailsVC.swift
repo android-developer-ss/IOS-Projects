@@ -103,9 +103,11 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
                 repeat {
                     let s = stores[index]
                     if s.name == store.name{
-                        storePicker.selectedRow(inComponent: index)
+                        //storePicker.selectedRow(inComponent: index)
+                        storePicker.selectRow(index, inComponent: index, animated: true)
                         break
                     }
+                    print("store picker count" + "\(storePicker.numberOfComponents)")
                     index += 1
                 } while(index < stores.count)
             }
