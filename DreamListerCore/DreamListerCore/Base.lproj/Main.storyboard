@@ -266,6 +266,9 @@
                     <navigationItem key="navigationItem" title="Add/Edit" id="vPa-s9-KSM">
                         <barButtonItem key="rightBarButtonItem" systemItem="trash" id="mID-pO-7mL">
                             <color key="tintColor" red="0.86192462910000001" green="0.063611431349999997" blue="0.06001598599" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="deletePressed:" destination="PuO-28-7SN" id="Pd5-h8-WFa"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>

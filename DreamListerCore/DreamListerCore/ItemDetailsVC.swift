@@ -104,7 +104,7 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
                     let s = stores[index]
                     if s.name == store.name{
                         //storePicker.selectedRow(inComponent: index)
-                        storePicker.selectRow(index, inComponent: index, animated: true)
+                        storePicker.selectRow(index, inComponent: 0, animated: true)
                         break
                     }
                     print("store picker count" + "\(storePicker.numberOfComponents)")
@@ -112,5 +112,12 @@ class ItemDetailsVC: UIViewController, UIPickerViewDataSource, UIPickerViewDeleg
                 } while(index < stores.count)
             }
         }
+    }
+    @IBAction func deletePressed(_ sender: UIBarButtonItem) {
+        if itemToEdit != nil {
+            context.delete(itemToEdit!)
+            ad.saveContext()
+        }
+        _ = navigationController?.popViewController(animated: true)
     }
 }
