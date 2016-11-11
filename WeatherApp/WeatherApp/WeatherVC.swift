@@ -27,12 +27,13 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         currentWeather.downloadWeatherDetails {
             self.updateMainUI()
         }
-        
         print(CURRENT_WEATHER_URL)
-        
-        
     }
 
+    func downloadForecastData(completed: DownloadComplete){
+        // Downloading forecast weather data for tableview.
+    }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
