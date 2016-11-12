@@ -19,6 +19,7 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
     
     var currentWeather = CurrentWeather()
+    var forecast: Forecast!
     var forecasts = [Forecast]()
     
     override func viewDidLoad() {
@@ -27,7 +28,10 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableView.delegate = self
         
         currentWeather.downloadWeatherDetails {
-            self.updateMainUI()
+            self.downloadForecastData {
+                self.updateMainUI()
+            }
+            
         }
         print(CURRENT_WEATHER_URL)
     }
@@ -43,11 +47,13 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                     for obj in list {
                         let forecast =  Forecast(weatherDict: obj)
                         self.forecasts.append(forecast)
+                        print(obj)
                     }
                 }
             }
-            
-        }
+                    }
+        completed()
+
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
