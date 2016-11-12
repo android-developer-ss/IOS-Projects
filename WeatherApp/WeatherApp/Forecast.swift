@@ -42,4 +42,33 @@ class Forecast {
         }
         return _lowTemp
     }
+    
+    init(weatherDict: Dictionary<String, AnyObject>){
+        // Min and max temperature parsing
+        if let temp = weatherDict["main"] as? Dictionary<String, AnyObject> {
+            
+            if let min = temp["temp_min"] as? Double {
+                let kelvinToFarenheitPreDivision = (min * (9/5) - 459.67)
+                let kelvinToFarenheit = Double(round(10 * kelvinToFarenheitPreDivision/10))
+                self._lowTemp = "\(kelvinToFarenheit)"
+            }
+            
+            if let max = temp["temp_max"] as? Double {
+                let kelvinToFarenheitPreDivision = (max * (9/5) - 459.67)
+                let kelvinToFarenheit = Double(round(10 * kelvinToFarenheitPreDivision/10))
+                self._highTemp = "\(kelvinToFarenheit)"
+            }
+        }
+        // Weather type parsing
+        if let weather = weatherDict["weather"] as? Dictionary<String, AnyObject> {
+            if let weatherType = weather["main"] as? String {
+                self._weatherType = weatherType
+            }
+        }
+        
+        // Date parsing
+        if let dateString = weatherDict["dt"] as? Double {
+            self._date = dateString
+        }
+    }
 }
