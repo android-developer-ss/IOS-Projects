@@ -50,22 +50,17 @@ class Forecast {
             if let min = temp["temp_min"] as? Double {
                 let kelvinToFarenheitPreDivision = (min * (9/5) - 459.67)
                 let kelvinToFarenheit = Double(round(10 * kelvinToFarenheitPreDivision/10))
-                self._lowTemp = "\(kelvinToFarenheit)"
-                print("\n\n\n  \(self.lowTemp)")
-            }
+                self._lowTemp = "\(kelvinToFarenheit)"            }
             
             if let max = temp["temp_max"] as? Double {
                 let kelvinToFarenheitPreDivision = (max * (9/5) - 459.67)
                 let kelvinToFarenheit = Double(round(10 * kelvinToFarenheitPreDivision/10))
-                self._highTemp = "\(kelvinToFarenheit)"
-                print(self.highTemp)
-            }
+                self._highTemp = "\(kelvinToFarenheit)"            }
         }
         // Weather type parsing
         if let weather = weatherDict["weather"] as? [Dictionary<String, AnyObject>] {
             if let weatherType = weather[0]["main"] as? String {
                 self._weatherType = weatherType
-                print("------------- WEATHER TYPE --------------------------\(self.weatherType)")
             }
         }
         
