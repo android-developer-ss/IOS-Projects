@@ -10,7 +10,7 @@ import UIKit
 import Alamofire
 import CoreLocation
 
-class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource, CLLocationManagerDelegate {
     
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var currentTemperatureLabel: UILabel!
@@ -19,22 +19,48 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var currentWeatherTypeLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
+    let locationManager = CLLocationManager()
+    var currentLocation: CLLocation!
+    
     var currentWeather = CurrentWeather()
     var forecast: Forecast!
     var forecasts = [Forecast]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startMonitoringSignificantLocationChanges()
+        
         tableView.dataSource = self
         tableView.delegate = self
-        
-        currentWeather.downloadWeatherDetails {
-            self.downloadForecastData {
-                self.updateMainUI()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        locationAuthStatus()
+    }
+    
+    func locationAuthStatus() {
+        if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
+            currentLocation = locationManager.location
+            // Access the singleton class and save the location in static variable to access it anywhere within the app anytime.
+            Location.sharedInstance.latitude = currentLocation.coordinate.latitude
+            Location.sharedInstance.longitude = currentLocation.coordinate.longitude
+            print(currentLocation.coordinate.latitude, currentLocation.coordinate.longitude)
+            
+            currentWeather.downloadWeatherDetails {
+                self.downloadForecastData {
+                    self.updateMainUI()
+                }
             }
             
+        } else {
+            locationManager.requestWhenInUseAuthorization()
+            locationAuthStatus()
         }
-        print(CURRENT_WEATHER_URL)
     }
     
     func downloadForecastData(completed: DownloadComplete){
@@ -48,14 +74,13 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                     for obj in list {
                         let forecast =  Forecast(weatherDict: obj)
                         self.forecasts.append(forecast)
-                        print(obj)
+//                        print(obj)
                     }
                     self.tableView.reloadData()
                 }
             }
         }
         completed()
-        
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
