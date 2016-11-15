@@ -22,19 +22,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyB-Ps-6HN">
-                                <rect key="frame" x="134" y="318" width="106" height="30"/>
+                                <rect key="frame" x="0.0" y="637" width="106" height="30"/>
                                 <state key="normal" title="Show Pop Over"/>
                                 <connections>
                                     <segue destination="zFQ-Yi-eWC" kind="popoverPresentation" identifier="popoverSegue" popoverAnchorView="oyB-Ps-6HN" id="XMe-lV-GjQ">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                        <popoverArrowDirection key="popoverArrowDirection" down="YES"/>
                                     </segue>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="oyB-Ps-6HN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MRB-oc-yrE"/>
-                            <constraint firstItem="oyB-Ps-6HN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ZCJ-06-hQj"/>
+                            <constraint firstItem="oyB-Ps-6HN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-134.5" id="MRB-oc-yrE"/>
+                            <constraint firstItem="oyB-Ps-6HN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="318.5" id="ZCJ-06-hQj"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -49,15 +49,16 @@
                         <viewControllerLayoutGuide type="top" id="A03-9O-ZZQ"/>
                         <viewControllerLayoutGuide type="bottom" id="r3d-0L-2mF"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="rg9-CB-VM5">
-                        <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
+                    <view key="view" alpha="0.40000000000000002" contentMode="scaleToFill" id="rg9-CB-VM5">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.86192462910000001" green="0.063611431349999997" blue="0.06001598599" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <value key="contentSizeForViewInPopover" type="size" width="150" height="50"/>
+                    <value key="contentSizeForViewInPopover" type="size" width="50" height="200"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="150" height="50"/>
+                    <size key="freeformSize" width="50" height="200"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K02-Pr-gKm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
