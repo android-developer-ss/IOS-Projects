@@ -15,6 +15,7 @@
 		3615CBCF1DDBA70700BC1D44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3615CBCD1DDBA70700BC1D44 /* LaunchScreen.storyboard */; };
 		3615CBDA1DDBA70700BC1D44 /* PokeDex3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3615CBD91DDBA70700BC1D44 /* PokeDex3Tests.swift */; };
 		3615CBE51DDBA70700BC1D44 /* PokeDex3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3615CBE41DDBA70700BC1D44 /* PokeDex3UITests.swift */; };
+		3615CBF31DDBB7DC00BC1D44 /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3615CBF21DDBB7DC00BC1D44 /* pokemon.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3615CBE01DDBA70700BC1D44 /* PokeDex3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokeDex3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3615CBE41DDBA70700BC1D44 /* PokeDex3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeDex3UITests.swift; sourceTree = "<group>"; };
 		3615CBE61DDBA70700BC1D44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3615CBF21DDBB7DC00BC1D44 /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				3615CBCB1DDBA70700BC1D44 /* Assets.xcassets */,
 				3615CBCD1DDBA70700BC1D44 /* LaunchScreen.storyboard */,
 				3615CBD01DDBA70700BC1D44 /* Info.plist */,
+				3615CBF21DDBB7DC00BC1D44 /* pokemon.csv */,
 				3615CBC81DDBA70700BC1D44 /* PokeDex3.xcdatamodeld */,
 			);
 			path = PokeDex3;
@@ -196,6 +199,7 @@
 				TargetAttributes = {
 					3615CBBD1DDBA70700BC1D44 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = EBV2457JM9;
 						ProvisioningStyle = Automatic;
 					};
 					3615CBD41DDBA70700BC1D44 = {
@@ -237,6 +241,7 @@
 			files = (
 				3615CBCF1DDBA70700BC1D44 /* LaunchScreen.storyboard in Resources */,
 				3615CBCC1DDBA70700BC1D44 /* Assets.xcassets in Resources */,
+				3615CBF31DDBB7DC00BC1D44 /* pokemon.csv in Resources */,
 				3615CBC71DDBA70700BC1D44 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +421,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EBV2457JM9;
 				INFOPLIST_FILE = PokeDex3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.svs.PokeDex3;
@@ -428,6 +434,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EBV2457JM9;
 				INFOPLIST_FILE = PokeDex3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.svs.PokeDex3;
