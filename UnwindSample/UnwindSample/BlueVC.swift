@@ -6,4 +6,8 @@
 //  Copyright © 2016 Snehal Sutar. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class BlueVC: UIViewController {
+    
+}
