@@ -8,13 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		366824C61DF8ABD300172DAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366824C51DF8ABD300172DAE /* AppDelegate.swift */; };
-		366824C81DF8ABD300172DAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366824C71DF8ABD300172DAE /* ViewController.swift */; };
+		366824C81DF8ABD300172DAE /* ViewControllerA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366824C71DF8ABD300172DAE /* ViewControllerA.swift */; };
 		366824CB1DF8ABD300172DAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 366824C91DF8ABD300172DAE /* Main.storyboard */; };
 		366824CE1DF8ABD300172DAE /* DeepLinkTesting.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 366824CC1DF8ABD300172DAE /* DeepLinkTesting.xcdatamodeld */; };
 		366824D01DF8ABD300172DAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 366824CF1DF8ABD300172DAE /* Assets.xcassets */; };
 		366824D31DF8ABD300172DAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 366824D11DF8ABD300172DAE /* LaunchScreen.storyboard */; };
 		366824DE1DF8ABD300172DAE /* DeepLinkTestingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366824DD1DF8ABD300172DAE /* DeepLinkTestingTests.swift */; };
 		366824E91DF8ABD300172DAE /* DeepLinkTestingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366824E81DF8ABD300172DAE /* DeepLinkTestingUITests.swift */; };
+		366824F71DF8AC5A00172DAE /* ViewControllerB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366824F61DF8AC5A00172DAE /* ViewControllerB.swift */; };
+		366824FA1DF8AC8000172DAE /* ViewControllerC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366824F91DF8AC8000172DAE /* ViewControllerC.swift */; };
+		366824FC1DF8AF1800172DAE /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366824FB1DF8AF1800172DAE /* MainVC.swift */; };
+		366824FE1DF8B0EC00172DAE /* RemoteNotificationDeepLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366824FD1DF8B0EC00172DAE /* RemoteNotificationDeepLink.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +41,7 @@
 /* Begin PBXFileReference section */
 		366824C21DF8ABD300172DAE /* DeepLinkTesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeepLinkTesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		366824C51DF8ABD300172DAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		366824C71DF8ABD300172DAE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		366824C71DF8ABD300172DAE /* ViewControllerA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerA.swift; sourceTree = "<group>"; };
 		366824CA1DF8ABD300172DAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		366824CD1DF8ABD300172DAE /* DeepLinkTesting.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DeepLinkTesting.xcdatamodel; sourceTree = "<group>"; };
 		366824CF1DF8ABD300172DAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +53,10 @@
 		366824E41DF8ABD300172DAE /* DeepLinkTestingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeepLinkTestingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		366824E81DF8ABD300172DAE /* DeepLinkTestingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkTestingUITests.swift; sourceTree = "<group>"; };
 		366824EA1DF8ABD300172DAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		366824F61DF8AC5A00172DAE /* ViewControllerB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerB.swift; sourceTree = "<group>"; };
+		366824F91DF8AC8000172DAE /* ViewControllerC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerC.swift; sourceTree = "<group>"; };
+		366824FB1DF8AF1800172DAE /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		366824FD1DF8B0EC00172DAE /* RemoteNotificationDeepLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteNotificationDeepLink.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +107,9 @@
 		366824C41DF8ABD300172DAE /* DeepLinkTesting */ = {
 			isa = PBXGroup;
 			children = (
+				366824FD1DF8B0EC00172DAE /* RemoteNotificationDeepLink.swift */,
+				366824F81DF8AC6100172DAE /* Controller */,
 				366824C51DF8ABD300172DAE /* AppDelegate.swift */,
-				366824C71DF8ABD300172DAE /* ViewController.swift */,
 				366824C91DF8ABD300172DAE /* Main.storyboard */,
 				366824CF1DF8ABD300172DAE /* Assets.xcassets */,
 				366824D11DF8ABD300172DAE /* LaunchScreen.storyboard */,
@@ -126,6 +135,17 @@
 				366824EA1DF8ABD300172DAE /* Info.plist */,
 			);
 			path = DeepLinkTestingUITests;
+			sourceTree = "<group>";
+		};
+		366824F81DF8AC6100172DAE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				366824C71DF8ABD300172DAE /* ViewControllerA.swift */,
+				366824F61DF8AC5A00172DAE /* ViewControllerB.swift */,
+				366824F91DF8AC8000172DAE /* ViewControllerC.swift */,
+				366824FB1DF8AF1800172DAE /* MainVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +216,7 @@
 				TargetAttributes = {
 					366824C11DF8ABD300172DAE = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = EBV2457JM9;
 						ProvisioningStyle = Automatic;
 					};
 					366824D81DF8ABD300172DAE = {
@@ -262,8 +283,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				366824C81DF8ABD300172DAE /* ViewController.swift in Sources */,
+				366824C81DF8ABD300172DAE /* ViewControllerA.swift in Sources */,
+				366824FC1DF8AF1800172DAE /* MainVC.swift in Sources */,
+				366824F71DF8AC5A00172DAE /* ViewControllerB.swift in Sources */,
+				366824FA1DF8AC8000172DAE /* ViewControllerC.swift in Sources */,
 				366824CE1DF8ABD300172DAE /* DeepLinkTesting.xcdatamodeld in Sources */,
+				366824FE1DF8B0EC00172DAE /* RemoteNotificationDeepLink.swift in Sources */,
 				366824C61DF8ABD300172DAE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +441,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EBV2457JM9;
 				INFOPLIST_FILE = DeepLinkTesting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.svs.DeepLinkTesting;
@@ -428,6 +454,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EBV2457JM9;
 				INFOPLIST_FILE = DeepLinkTesting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.svs.DeepLinkTesting;

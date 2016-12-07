@@ -88,6 +88,88 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
-
+    
+////    var window: UIWindow?
+//    var loadedEnoughToDeepLink : Bool = false
+//    var deepLink : RemoteNotificationDeepLink?
+//    
+//    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+//        if url.host == nil{
+//            return true;
+//        }
+//        
+//        let urlString = url.absoluteString
+//        let queryArray = urlString.components(separatedBy: "/")
+//        let query = queryArray[2]
+//        
+//        // Check if article
+//        if query.range(of: "article") != nil
+//        {
+//            let data = urlString.components(separatedBy: "/")
+//            if data.count >= 3
+//            {
+//                let parameter = data[3]
+//                let userInfo = [RemoteNotificationDeepLinkAppSectionKey : parameter ]
+//                self.applicationHandleRemoteNotification(application: application, didReceiveRemoteNotification: userInfo as [NSObject : AnyObject])
+//            }
+//        }
+//        
+//        return true
+//    }
+//    
+//
+//    private func applicationHandleRemoteNotification(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject])
+//    {
+//        if application.applicationState == UIApplicationState.background || application.applicationState == UIApplicationState.inactive
+//        {
+//            let canDoNow = loadedEnoughToDeepLink
+//            
+//            self.deepLink = RemoteNotificationDeepLink.create(userInfo: userInfo)
+//            
+//            if canDoNow
+//            {
+//                self.triggerDeepLinkIfPresent()
+//            }
+//        }
+//    }
+//    
+//    func triggerDeepLinkIfPresent() -> Bool
+//    {
+//        self.loadedEnoughToDeepLink = true
+//        let ret = (self.deepLink?.trigger() != nil)
+//        self.deepLink = nil
+//        return ret
+//    }
+    
+    
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        
+        print("url \(url)")
+        print("url host :\(url.host as String!)")
+        print("url path :\(url.path as String!)")
+        
+        
+        let urlPath : String = url.path as String!
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        if(urlPath == "/A"){
+            
+            let vcA: ViewControllerA = mainStoryboard.instantiateViewController(withIdentifier: "ViewControllerA") as! ViewControllerA
+            self.window?.rootViewController = vcA
+            
+        }else if(urlPath == "/B"){
+            let vcB: ViewControllerB = mainStoryboard.instantiateViewController(withIdentifier: "ViewControllerB") as! ViewControllerB
+            self.window?.rootViewController = vcB
+            
+        }else if(urlPath == "/C"){
+            
+            let vcC: ViewControllerC = mainStoryboard.instantiateViewController(withIdentifier: "ViewControllerC") as! ViewControllerC
+            self.window?.rootViewController = vcC
+        }
+        
+        
+        self.window?.makeKeyAndVisible()
+        return true
+    }
 }
 
