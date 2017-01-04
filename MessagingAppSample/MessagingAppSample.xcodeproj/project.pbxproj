@@ -159,6 +159,7 @@
 				TargetAttributes = {
 					369F723F1E077C5700CEBA78 = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = EBV2457JM9;
 						ProvisioningStyle = Automatic;
 					};
 					369F72491E077C5800CEBA78 = {
@@ -361,6 +362,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EBV2457JM9;
 				INFOPLIST_FILE = MessagingAppSample/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = com.svs.MessagingAppSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -373,6 +375,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EBV2457JM9;
 				INFOPLIST_FILE = MessagingAppSample/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = com.svs.MessagingAppSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
