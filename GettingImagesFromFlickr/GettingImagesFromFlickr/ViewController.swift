@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func getNextImageAction(_ sender: AnyObject) {
+    @IBAction func getNextImageAction(_ sender: Any) {
         setUIEnabled(false)
         getImageFromFlickr()
     }
